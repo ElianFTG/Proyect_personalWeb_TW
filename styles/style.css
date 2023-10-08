@@ -4,13 +4,14 @@ a{
 }
 
 body{
-    background-color: aqua;
+    background-color: rgba(210, 13, 26, 0.629);
 }
 
 #mamiferos,#anfibios,#aves,#reptiles,#peces{
     width: 50%; /* Para que cada par de divs ocupe el 50% del ancho del contenedor */
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho de los divs */
     text-align: center;
+    margin: 10px;
 }
 
 .contenido{
@@ -21,10 +22,10 @@ body{
     align-items: center;
     flex-wrap: wrap;
     align-content: space-around;
-
+    
 }
 
 .foto-animals-tipo{
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
 }
