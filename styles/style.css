@@ -1,27 +1,34 @@
 a{
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+header,footer{
+    color: whitesmoke;
 }
 
 body{
-    background-color: aqua;
+    background-color: black;
 }
 
 #mamiferos,#anfibios,#aves,#reptiles,#peces{
-    width: 50%; /* Para que cada par de divs ocupe el 50% del ancho del contenedor */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho de los divs */
+    flex-basis: calc(50% - 10px); /* Establece el ancho de cada div en un 50% - margen de 10px */
+    margin: 10px; /* Márgenes entre los divs */
+    box-sizing: border-box; /* Incluye el margen en el ancho de los divs */
     text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 .contenido{
     background-color: rgba(0,0,0,0.5);
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    align-content: space-around;
-
+    align-content: flex-start;
+    
 }
 
 .foto-animals-tipo{
