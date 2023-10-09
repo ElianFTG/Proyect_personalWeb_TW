@@ -1,31 +1,72 @@
 a{
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+header{
+    color: white;
 }
 
 body{
-    background-color: rgba(210, 13, 26, 0.629);
+    background-color: black;
 }
 
-#mamiferos,#anfibios,#aves,#reptiles,#peces{
-    width: 50%; /* Para que cada par de divs ocupe el 50% del ancho del contenedor */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho de los divs */
-    text-align: center;
-    margin: 10px;
+#mamiferos{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; 
+    cursor: pointer;
+}   
+
+#mamiferos::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://i.pinimg.com/564x/5e/c8/8f/5ec88f7eb68455315d4f3dae76035c2b.jpg");
+    border-radius: 10px;
+    transition: all 500ms ease-out;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0; 
+    pointer-events: none;
 }
+#mamiferos:hover::after {
+    opacity: 1; 
+  }
 
 .contenido{
-    background-color: rgba(0,0,0,0.5);
     display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
     flex-wrap: wrap;
-    align-content: space-around;
-    
+    justify-content: space-between; /* Centra horizontalmente el contenido */
+    align-items: flex-start; /* Centra verticalmente el contenido */
+    width: 100%; /* Ajusta el ancho del div padre según sea necesario */
+    height: 100%;
 }
 
 .foto-animals-tipo{
     height: 200px;
     width: 200px;
 }
+
+footer{
+    color: whitesmoke;
+}
+.animales{
+    width: 50%; /* Para que cada par de divs ocupe el 50% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho de los divs */
+    text-align: center; /* Centra el contenido de cada div horizontalmente */
+    border: 1px solid #ccc; /* Añade un borde para visualización */
+    
+}
+@media all and (max-width: 450px){
+    .contenido{
+        flex-direction: column;
+    }
+    .animales{
+        width: 100%;
+    }
+} 
