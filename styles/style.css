@@ -3,28 +3,14 @@ a{
     color: white;
 }
 
-<<<<<<< HEAD
-header,footer{
-    color: whitesmoke;
-=======
 header{
     color: white;
->>>>>>> 215dfc1ae82bc3b147a2a74f7f681a3a2ef67166
 }
 
 body{
     background-color: black;
 }
 
-<<<<<<< HEAD
-#mamiferos,#anfibios,#aves,#reptiles,#peces{
-    flex-basis: calc(50% - 10px); /* Establece el ancho de cada div en un 50% - margen de 10px */
-    margin: 10px; /* Márgenes entre los divs */
-    box-sizing: border-box; /* Incluye el margen en el ancho de los divs */
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-=======
 #mamiferos{
     position: relative;
     width: 100%;
@@ -47,28 +33,19 @@ body{
     background-repeat: no-repeat;
     opacity: 0; 
     pointer-events: none;
->>>>>>> 215dfc1ae82bc3b147a2a74f7f681a3a2ef67166
 }
 #mamiferos:hover::after {
     opacity: 1; 
   }
 
 .contenido{
-    display: flex;
-<<<<<<< HEAD
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    
-=======
-    flex-wrap: wrap;
-    justify-content: space-between; /* Centra horizontalmente el contenido */
-    align-items: flex-start; /* Centra verticalmente el contenido */
-    width: 100%; /* Ajusta el ancho del div padre según sea necesario */
+    width: 60%;
     height: 100%;
->>>>>>> 215dfc1ae82bc3b147a2a74f7f681a3a2ef67166
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
 }
 
 .foto-animals-tipo{
@@ -80,14 +57,12 @@ footer{
     color: whitesmoke;
 }
 .animales{
-    width: 50%; /* Para que cada par de divs ocupe el 50% del ancho del contenedor */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho de los divs */
-    text-align: center; /* Centra el contenido de cada div horizontalmente */
-    border: 1px solid #ccc; /* Añade un borde para visualización */
-    
+    border: 0.1px solid;
+    border-color: white;
 }
 @media all and (max-width: 450px){
     .contenido{
+        display: flex;
         flex-direction: column;
     }
     .animales{
