@@ -1,10 +1,105 @@
+
+.cabeza{
+    width: 100%;
+    height: 30vw;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.foto-banner{
+    width: 100%;
+    height: 80%;
+}
+
+hr{
+    margin: 0;
+}
+
+.contenido{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.animal{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+
+.animal:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.animal img{
+	width: 100%;
+	height: 210px;
+}
+
+.card .informacion{
+	padding: 15px;
+	text-align: center;
+}
+
+/* --
+.contenido{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.animal{
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #d12f2f;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.animal:hover{
+    box-shadow: 5px 5px 20px rgb(26, 25, 25);
+    transform: translateY(-3%);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.foto-animals-tipo{
+    width: 100%;
+	height: 210px;
+}
+
+
 a{
+    text-decoration: none;
+    color: black;
+}
+--- */
+/* a{
     text-decoration: none;
     color: white;
 }
 
 header{
-    color: white;
+    background-image: url("https://media.istockphoto.com/id/1023735518/photo/safari-zoo-animals-over-web-banner.jpg?s=170667a&w=0&k=20&c=X24UKXgdz3Daa9E10I2rdHuXAqh7a8U8PQWmlPdP6sI=");
+    width: 100%;
+    height: 200px;
+    
 }
 
 body{
@@ -68,4 +163,5 @@ footer{
     .animales{
         width: 100%;
     }
-} 
+}  */
+
