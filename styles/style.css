@@ -24,7 +24,7 @@ hr{
 	margin: auto;
 }
 
-.animal{
+.animales{
 	width: 100%;
 	margin: 20px;
 	border-radius: 6px;
@@ -35,17 +35,17 @@ hr{
 	cursor: default;
 }
 
-.animal:hover{
+.animales:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
 }
 
-.animal img{
+.animales img{
 	width: 100%;
 	height: 210px;
 }
 
-.card .informacion{
+.animales .informacion{
 	padding: 15px;
 	text-align: center;
 }
