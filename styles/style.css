@@ -8,6 +8,11 @@
     
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .foto-banner{
     width: 100%;
     height: 80%;
@@ -15,6 +20,9 @@
 
 hr{
     margin: 0;
+}
+h4{
+    margin-top: 0;
 }
 
 .contenido{
@@ -58,19 +66,24 @@ hr{
 
 .lista-info{
     display: flex;
+    flex-wrap: wrap;
 }
 
+.lista-info li{
+    width: 50%;
+}
 
 .slider{
     width: 100%;
     height: 100%;
-    
+    overflow: hidden;
+    position: relative;
     
   }
 .slider ul{
-    list-style: none;
+
     display: flex;
-    animation: cambio 20s infinite ease-in-out;
+    animation: cambio 10s infinite alternate ease-in-out;
     width: 400%;
     padding: 0;
 }
@@ -78,23 +91,24 @@ hr{
     width: 100%;
     list-style: none;
 }
+
+.slider-frame img {
+	width: 100%;
+}
+
 @keyframes cambio {
-    0% {
-      transform: translateX(0%);
-    }
-    25% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(-100%);
-    }
-    75% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+    0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
 
 /* --
 .contenido{
@@ -202,12 +216,20 @@ footer{
     width: 100%;
     height: 100%;
 }   */
-@media all and (max-width: 450px){
+@media all and (max-width: 500px){
     .contenido{
         display: flex;
         flex-direction: column;
     }
     .animales{
+        width: 100%;
+    }
+    .lista-info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .lista-info li{
         width: 100%;
     }
 }  
