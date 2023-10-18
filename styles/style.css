@@ -33,6 +33,8 @@ h3{
 
 .pagina-titulo{
     font-family: 'DM Serif Display', serif;
+    text-align: center;
+    margin: 5px;
 }
 
 .contenido{
